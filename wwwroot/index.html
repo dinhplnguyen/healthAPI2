@@ -13,8 +13,7 @@
       <script>
         $(function () {
           var getPatients = function () {
-            var url =
-              "https://dinhplnguyen-health-database.database.windows.net/";
+            var url = "https://localhost:7078/api/patients/";
             $.get(url).always(showResponse);
             return false;
           };
