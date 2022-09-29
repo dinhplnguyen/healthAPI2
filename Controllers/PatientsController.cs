@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HealthAPI.Data;
 using HealthAPI.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace HealthAPI.Controllers
 {
+  // [EnableCors("HealthPolicy")]
   [Route("api/[controller]")]
   [ApiController]
   public class PatientsController : ControllerBase
