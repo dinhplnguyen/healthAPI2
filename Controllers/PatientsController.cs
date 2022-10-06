@@ -13,6 +13,7 @@ namespace HealthAPI.Controllers
 {
   // [EnableCors("HealthPolicy")]
   [Route("api/[controller]")]
+  [EnableCors("HealthPolicy")]
   [ApiController]
   public class PatientsController : ControllerBase
   {

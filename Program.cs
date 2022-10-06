@@ -17,8 +17,7 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
  options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
 );
 
-// Add Cors
-
+/// Add Cors
 builder.Services.AddCors(o => o.AddPolicy("HealthPolicy", builder =>
 {
   builder.AllowAnyOrigin()
